@@ -15,6 +15,7 @@ export class ResidencesComponentComponent {
    ];
 
    favoriteResidences: Residence[] = [];
+   searchAddress: string = '';
 
    showLocation(address: string): void {
     if(address === 'inconnu') {
@@ -33,5 +34,10 @@ export class ResidencesComponentComponent {
     }
   }
  
+  getFilteredResidences(): Residence[] {
+    return this.listResidences.filter(residence =>
+      residence.address.toLowerCase().includes(this.searchAddress.toLowerCase())
+    );
+  }
 
 }

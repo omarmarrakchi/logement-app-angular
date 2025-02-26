@@ -1,6 +1,11 @@
 <div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Rechercher par adresse" [(ngModel)]="searchAddress">
+    </div>
+  </div>
   <div class="row">
-    <div class="col-md-4 mb-4" *ngFor="let residence of listResidences">
+    <div class="col-md-4 mb-4" *ngFor="let residence of getFilteredResidences()">
       <div class="card h-100">
         <img [src]="residence.image" class="card-img-top" alt="{{residence.name}}">
         <div class="card-body">
