@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'; 
 import { AppComponent } from './app.component';
 import { ResidencesComponentComponent } from './residences-component/residences-component.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResidencesComponentComponent
+    ResidencesComponentComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
