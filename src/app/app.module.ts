@@ -13,6 +13,7 @@ import { AddResidenceComponent } from './Residences/add-residence/add-residence.
 import { ApartmentsComponent } from './Apartments/apartments/apartments.component';
 import { ApartmentsByResidenceComponent } from './Apartments/apartments-by-residence/apartments-by-residence.component';
 import { AddApartmentComponent } from './Apartments/add-apartment/add-apartment.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddApartmentComponent } from './Apartments/add-apartment/add-apartment.
     AddResidenceComponent,
     ApartmentsComponent,
     ApartmentsByResidenceComponent,
-    AddApartmentComponent
+    AddApartmentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

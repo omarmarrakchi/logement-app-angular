@@ -1,1 +1,9 @@
-<p>residence-details works!</p>
+<div *ngIf="residence">
+    <h2>{{ residence.name }}</h2>
+    <img [src]="residence.image" alt="{{ residence.name }}">
+    <p><strong>Adresse:</strong> {{ residence.address }}</p>
+    <p><strong>Status:</strong> {{ residence.status }}</p>
+    <button class="btn btn-primary" (click)="goToNextResidence()">Next</button>
+    <button class="btn btn-success" [routerLink]="['/add-residence']">Add Residence</button>
+    <button class="btn btn-warning" [routerLink]="['/add-residence', residence.id]">Update Residence</button>
+</div>
