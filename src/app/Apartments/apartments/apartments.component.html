@@ -1,1 +1,31 @@
-<p>apartments works!</p>
+<div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Rechercher par adresse"
+      />
+    </div>
+    <button class="btn btn-success mt-2" [routerLink]="['/add-residence']">
+      Add Residence
+    </button>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let app of listApartments">
+      <div class="card h-100">
+        <img [src]="app.image" class="card-img-top" alt="{{ app.apartNum }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ app.apartNum }}</h5>
+          <p class="card-text">etage: {{ app.floorNum }}</p>
+          <div *ngIf="app.terrace === true">
+            <p class="text-success mt-2">🟢 terrace Disponible</p>
+          </div>
+          <div *ngIf="app.terrace === false">
+            <p class="text-danger mt-2">🔴 terrace Indisponible</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

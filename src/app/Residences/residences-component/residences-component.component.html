@@ -36,10 +36,16 @@
             Like
           </button>
           <button
-            class="btn btn-info"
+            class="btn btn-info me-2"
             [routerLink]="['/residence', residence.id]"
           >
             Détails
+          </button>
+          <button
+            class="btn btn-primary mt-2"
+            [routerLink]="['/apartments-list', residence.id]"
+          >
+            appartements
           </button>
           <div *ngIf="residence.status === 'Disponible'">
             <p class="text-success mt-2">🟢 Disponible</p>
