@@ -7,7 +7,7 @@
         placeholder="Rechercher par adresse"
       />
     </div>
-    <button class="btn btn-success mt-2" [routerLink]="['/add-residence']">
+    <button class="btn btn-success mt-2" [routerLink]="['/add-appartement']">
       Add Residence
     </button>
   </div>
@@ -24,6 +24,7 @@
           <div *ngIf="app.terrace === false">
             <p class="text-danger mt-2">🔴 terrace Indisponible</p>
           </div>
+          <p class="card-text">Similar Addresses: {{ getSimilarSurface(app.surface) }}</p>
         </div>
       </div>
     </div>

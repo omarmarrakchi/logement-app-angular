@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Apartment } from 'src/core/models/apartment';
+import { CommonService } from 'src/core/models/services/common.service';
 
 
 @Component({
@@ -20,8 +21,14 @@ export class ApartmentsComponent implements OnInit {
     { apartNum: 402, floorNum: 4, surface: 105, terrace: false, surfaceterrace: 0, category: 'T3', ResidenceId: 4, image: "../../../assets/images/app8.jpg" }
   ];
 
+  constructor(private commonService: CommonService) {}
+
   ngOnInit(): void {
     
+  }
+
+  getSimilarSurface(surface: number): number {
+    return this.commonService.getSameValueOf(this.listApartments, 'surface', surface);
   }
     
 
