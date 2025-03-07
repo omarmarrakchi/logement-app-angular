@@ -23,7 +23,9 @@
         <div class="card-body">
           <h5 class="card-title">{{ residence.name }}</h5>
           <p class="card-text">Status: {{ residence.status }}</p>
-          <p class="card-text">Similar Addresses: {{ getSimilarAddressesCount(residence.address) }}</p>
+          <p class="card-text">
+            Similar Addresses: {{ getSimilarAddressesCount(residence.address) }}
+          </p>
           <button
             class="btn btn-primary me-2"
             (click)="showLocation(residence.address)"
@@ -47,6 +49,12 @@
             [routerLink]="['/apartments-list', residence.id]"
           >
             appartements
+          </button>
+          <button
+            class="btn btn-danger mt-2"
+            (click)="deleteResidence(residence.id)"
+          >
+            Supprimer
           </button>
           <div *ngIf="residence.status === 'Disponible'">
             <p class="text-success mt-2">🟢 Disponible</p>

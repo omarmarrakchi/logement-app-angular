@@ -1,0 +1,129 @@
+{
+  "apartments": [
+    {
+      "apartNum": 101,
+      "floorNum": 1,
+      "surface": 75,
+      "terrace": true,
+      "surfaceterrace": 10,
+      "category": "T2",
+      "ResidenceId": 1,
+      "image": "../../../assets/images/app1.jpg",
+      "id": "2d7a"
+    },
+    {
+      "apartNum": 102,
+      "floorNum": 1,
+      "surface": 80,
+      "terrace": false,
+      "surfaceterrace": 0,
+      "category": "T3",
+      "ResidenceId": 1,
+      "image": "../../../assets/images/app2.jpg",
+      "id": "f101"
+    },
+    {
+      "apartNum": 201,
+      "floorNum": 2,
+      "surface": 90,
+      "terrace": true,
+      "surfaceterrace": 15,
+      "category": "T3",
+      "ResidenceId": 2,
+      "image": "../../../assets/images/app3.jpg",
+      "id": "508c"
+    },
+    {
+      "apartNum": 202,
+      "floorNum": 2,
+      "surface": 85,
+      "terrace": false,
+      "surfaceterrace": 0,
+      "category": "T2",
+      "ResidenceId": 2,
+      "image": "../../../assets/images/app4.jpg",
+      "id": "5760"
+    },
+    {
+      "apartNum": 301,
+      "floorNum": 3,
+      "surface": 100,
+      "terrace": true,
+      "surfaceterrace": 20,
+      "category": "T4",
+      "ResidenceId": 3,
+      "image": "../../../assets/images/app5.jpg",
+      "id": "410a"
+    },
+    {
+      "apartNum": 302,
+      "floorNum": 3,
+      "surface": 95,
+      "terrace": false,
+      "surfaceterrace": 0,
+      "category": "T3",
+      "ResidenceId": 3,
+      "image": "../../../assets/images/app6.jpg",
+      "id": "ea36"
+    },
+    {
+      "apartNum": 401,
+      "floorNum": 4,
+      "surface": 110,
+      "terrace": true,
+      "surfaceterrace": 25,
+      "category": "T4",
+      "ResidenceId": 4,
+      "image": "../../../assets/images/app7.jpg",
+      "id": "2fd6"
+    },
+    {
+      "apartNum": 402,
+      "floorNum": 4,
+      "surface": 105,
+      "terrace": false,
+      "surfaceterrace": 0,
+      "category": "T3",
+      "ResidenceId": 4,
+      "image": "../../../assets/images/app8.jpg",
+      "id": "36dd"
+    }
+  ],
+  "residences": [
+    {
+      "id": 1,
+      "name": "El fel",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/R1.png",
+      "status": "Disponible"
+    },
+    {
+      "id": "2",
+      "name": "El yasmine",
+      "address": "Ezzahra",
+      "image": "../../assets/images/R2.jpg",
+      "status": "Disponible"
+    },
+    {
+      "id": "3",
+      "name": "El Arij",
+      "address": "Rades",
+      "image": "../../assets/images/R3.jpg",
+      "status": "Vendu"
+    },
+    {
+      "id": "4",
+      "name": "El Anber",
+      "address": "Ezzahra",
+      "image": "../../assets/images/R4.jpg",
+      "status": "En Construction"
+    },
+    {
+      "id": "",
+      "name": "test",
+      "address": "test",
+      "image": "https://asba",
+      "status": "En Construction"
+    }
+  ]
+}
